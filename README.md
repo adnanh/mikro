@@ -5,8 +5,9 @@ Checkout my [running instance](https://blog.hajdarevic.net/)
 
 # running
 1. clone this repository
-1. `bundle install`
-1. `./start.sh PORT`
+1. modify `config.yml`
+1. run `bundle install` to install dependencies
+1. run `./start.sh [PORT]` to start the instance, if you don't specify the port, it will start up on port 8800 by default.
 
 # stopping
 1. `./stop.sh`
