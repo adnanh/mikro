@@ -1,0 +1,20 @@
+<h5>login</h5>
+<form action="/login" method="post">
+  <div class="row">
+    <div class="twelve columns">
+      <label for="password"
+             <% if error %>
+             class="error"
+             <% end %>
+             >
+        password
+      </label>
+      <input id="password" type="password" name="password" class="u-full-width" autofocus="true"/>
+    </div>
+  </div>
+  <div class="row">
+    <div class="twelve columns">
+      <input type="submit" value="Login" class="u-pull-right"/>
+    </div>
+  </div>
+</form>

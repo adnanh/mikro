@@ -1,0 +1,19 @@
+<header class="u-full-width">
+  <div class="container">
+    <div class="row">
+      <div class="six columns">
+        <a href="/">home</a> &nbsp;&nbsp;
+        <% if session[:logged_in] %>
+            <a href="/post/new">new post</a>
+        <% end %>
+      </div>
+      <div class="six columns">
+        <% if session[:logged_in] %>
+            <a href="/logout" class="u-pull-right">logout</a>
+        <% else %>
+            <a href="/login" class="u-pull-right">login</a>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</header>

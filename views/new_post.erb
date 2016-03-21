@@ -1,0 +1,7 @@
+<h5>new post</h5>
+
+<form action="/post" method="post">
+  <label for="body">body /<a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" target="_blank">markdown cheatsheet</a>/</label>
+  <textarea id="body" name="body" class="u-full-width" autofocus="true" required><%= escape body %></textarea>
+  <input type="submit" name="submit" class="u-pull-right" value="Create"/>
+</form>

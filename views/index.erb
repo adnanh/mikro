@@ -1,0 +1,29 @@
+<div class="row">
+  <div class="twelve columns">
+    <h5 class="blog-title"><%= CONFIG['settings']['name'] %></h5>
+    <%= RDiscount.new(CONFIG['settings']['description']).to_html %>
+  </div>
+</div>
+
+<section id="posts">
+  <% if all_posts.to_a.empty? %>
+      <h6>No entries, yet.
+        <% if session[:logged_in] %>
+            <a href="/post/new">Go ahead and add something.</a>
+        <% end %></h6>
+
+  <% else %>
+      <% posts_by_year.each do |year, months| %>
+          <% months.each do |month, posts| %>
+              <div class="blog-month"><%= month %>, <%= year %></div>
+              <div class="blog-month-posts">
+                <% posts.each do |post| %>
+                    <%= erb :post, locals: {post: post} %>
+                <% end %>
+              </div>
+          <% end %>
+      <% end %>
+
+
+  <% end %>
+</section>

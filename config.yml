@@ -1,0 +1,12 @@
+database:
+  connection_string: sqlite://db/blog.db
+cookie:
+  :key: mikro_session
+  :domain: localhost
+  :path: /
+  :expire_after: 2592000
+  :secret: change_me
+settings:
+  name: Mikro(b)log
+  description: "Use *markdown* for description"
+  password: secret

@@ -1,0 +1,46 @@
+.error {
+    color: #ff422b;
+    font-weight: bold;
+}
+
+header {
+    display: block;
+    width: 100%;
+    height: 26px;
+    background-color: #eeeeee;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+header a,
+header a:link,
+header a:visited,
+header a:active {
+    padding-left: 5px;
+    padding-right: 5px;
+    display: inline-block;
+    line-height: 25px;
+    border-bottom: 1px solid #ddd;
+    text-decoration: none;
+    font-weight: normal;
+    color: #666;
+}
+
+header a:hover {
+    color: #2a54a7;
+    border-bottom: 1px solid #2a54a7;
+}
+
+.blog-title {
+    margin-bottom: 0px;
+}
+
+.blog-month {
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #aaa;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

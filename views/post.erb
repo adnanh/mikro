@@ -1,0 +1,14 @@
+<% markdown = RDiscount.new(post[:body], :autolink, :filter_html, :filter_styles) %>
+
+<div class="row">
+  <div class="two columns">
+    <a href="/post/<%= post[:id] %>" title="<%= post[:created_at] %>">#<%= post[:id] %></a>
+    <% if session[:logged_in] %>
+        <br/><a href="/post/<%= post[:id] %>/update">modify</a><br/><a href="/post/<%= post[:id] %>/delete">delete</a><br/><br/>
+    <% end %>
+
+  </div>
+  <div class="ten columns">
+    <%= markdown.to_html %>
+  </div>
+</div>
