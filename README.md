@@ -1,7 +1,7 @@
 # mikro
 simple micro (b)log app in ruby
 
-Checkout my [running instance](https://blog.hajdarevic.net/)
+check out my [running instance](http://blog.hajdarevic.net/)
 
 # running
 1. clone this repository
