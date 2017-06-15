@@ -9,8 +9,6 @@ CONFIG = YAML.load_file('config.yml')
 
 DB = Sequel.connect(CONFIG['database']['connection_string'])
 
-require_relative '../db/post'
-
 unless DB.table_exists?(:posts)
   DB.create_table :posts do
     primary_key :id
@@ -19,3 +17,6 @@ unless DB.table_exists?(:posts)
     DateTime :updated_at
   end
 end
+
+require_relative '../db/post'
+
